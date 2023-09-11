@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 530px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 1px 5px 6px rgba(0,0,0,0.1);
+}
+
+.login{
+    width: 100%;
+    height: auto;
+}
+.login-a{
+    width: 270px;
+    height: 27px;
+    padding: 3px 0 0 130px;
+    padding-bottom: 7px;
+    line-height: 28px;
+    position: relative;
+}
+.login-a .login_lab{
+    width: 120px;
+    font-size: 14px;
+    color: #666;
+    line-height: 32px;
+    margin-left: -130px;
+    float: left;
+    text-align: right;
+}
+.login-a .login_inp{
+    width: 162px;
+    height: 27px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.login_close{
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    text-indent: -999em;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+    background: url("../img/gspriteV1705.png") no-repeat;
+}
+.menu ul li a{
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    width:auto;
+}
+
+a{
+    text-decoration: none;
+}
+.list{
+    width: 100%;
+    height: 50px;
+    background: url("../img/gspriteV1705.png") repeat-x  0 -416px;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.list_login{
+    width:90px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    display: inline;
+    list-style: none;
+    border-radius: 5px;
+    background-color: #79b913;
+    margin: 8px 10px 0 0;
+}
+.active{
+    background-color: #fff;
+    color: black;
+}
+#one_login{
+    color:#666;
+}
+.fro{
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.fltit{
+    width: 100%;
+    height: 21px;
+    position: relative;
+    /*margin-bottom: 5px;*/
+}
+.fltit .line{
+    width: 200px;
+    height: 1px;
+    background-color: #d4d2d2;
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+    margin-top: 10px;
+}
+.lt{
+    left: 0;
+}
+.rt{
+    right: 0;
+}
+.tit_h3{
+    font-size: 14px;
+    text-align: center;
+    color: #d4d2d2;
+}
+.menu_qq{
+    width: 100%;
+    height: 51px;
+}
+.menu_qq span{
+    width: 100px;
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+    display: inline-block;
+    line-height: 51px;
+    float: left;
+}
+.menu_qq a{
+    float: left;
+}
+.phone i{
+    width: 115px;
+}
+.QQ_login i{
+    width: 80px;
+    float: left;
+}
+.Weixin_login i{
+    width: 80px;
+}
+.weiBo_login i{
+    width: 100px;
+}
+#phone_login i{
+    background-position: 0 -712px;
+}
+#QQ_login i{
+    background-position: 0 -578px;
+}
+#Weixin_login i{
+    background-position: 0 -612px;
+}
+#WeiBo_login i{
+    background-position: 0 -204px;
+}
+.menu_qq  i{
+    height: 31px;
+    background: url(../img/gspriteV1705.png) no-repeat;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.login_auto{
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin-top: 11px;
+}
+.login_auto_inp{
+    float: left;
+    margin-right: 10px;
+    line-height: 31px;
+}
+.enroll{
+    width: 165px;
+    height: 30px;
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    background: url("../img/gspriteV1705.png") no-repeat;
+}
+#enroll_img{
+    background-position: 0 -530px;
+}
+.login_auto_inp span{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.login_auto_inp a{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #1278c0;
+}
+.login_auto_inp a:hover{
+    border-bottom: 1px solid red;
+    color: red;
+}
+.login_link{
+    width: 170px;
+    float: left;
+    margin-left: 8px;
+}
+.login_link a{
+    display: inline-block;
+    font-size: 12px;
+    color: #1278c0;
+}
+.login_link a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.login_links_sp{
+    width: auto;
+    color: #666666;
+    display: inline-block;
+    padding: 0 7px 0 7px;
+}
+.login_btn{
+    width: 77px;
+    height: 30px;
+    background: url(../img/gspriteV1705.png) no-repeat;
+    margin-right: 7px;
+    display: block;
+    float: left;
+    outline: none;
+    border: 0;
+    overflow: hidden;
+}
+#login_btn_Img{
+    background-position: 0 -76px;
+}
+#registration_Img{
+    background-position: 0 -106px;
+}
+.login_lab em{
+    font-style: normal;
+    color: red;
+}
+.menu_login_qq{
+    width: 400px;
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+}
+/* one 结束 */
+a{
+    text-decoration: none;
+}
+.module{
+    width: 530px;
+    height: auto;
+    margin: 0 auto;
+    display: none;
+}
+.b_menu_qq{
+    width: 100%;
+    height: 51px;
+}
+.b_menu_qq span{
+    width: 100px;
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+    display: inline-block;
+    line-height: 51px;
+    float: left;
+}
+.b_menu_qq a{
+    float: left;
+}
+.b_phone i{
+    width: 115px;
+}
+.b_QQ_login i{
+    width: 80px;
+    float: left;
+}
+.b_Weixin_login i{
+    width: 80px;
+}
+.b_weiBo_login i{
+    width: 100px;
+}
+#b_phone_login i{
+    background-position: 0 -712px;
+}
+#b_QQ_login i{
+    background-position: 0 -578px;
+}
+#b_Weixin_login i{
+    background-position: 0 -612px;
+}
+#b_WeiBo_login i{
+    background-position: 0 -204px;
+}
+.b_menu_qq  i{
+    height: 31px;
+    background: url(../img/gspriteV1705.png) no-repeat;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.b_menu_login_qq{
+    width: 400px;
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+}
+.login_module{
+    width: 100%;
+    height: 300px;
+}
+.login_menu{
+    height: 300px;
+}
+.login_h{
+    width: 400px;
+    height: 34px;
+    padding: 2px 0 2px 130px;
+    position: relative;
+}
+.r_label_user{
+    width: 120px;
+    height: 31px;
+    float: left;
+    margin-left: -130px;
+    line-height: 34px;
+    color: #666;
+    text-align: right;
+    font-size: 14px;
+}
+.r_label_user em{
+    color: red;
+    font-style: normal;
+}
+.login_inp{
+    width: 162px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: #fff none;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.login_h{
+    color: #b3b3b3;
+    font-size: 14px;
+
+}
+.input_tit{
+    font-size: 12px;
+    line-height: 27px;
+}
+.input_tit a{
+    text-decoration: none;
+    color: #1278c0;
+}
+.input_tit a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.login_register_Wt{
+    width: 172px;
+    height: 30px;
+    cursor: pointer;
+    border: 0 none;
+    overflow: hidden;
+    display: block;
+    float: left;
+    background: url('../img/gspriteV1705.png') no-repeat;
+}
+.login_register_Wt a{
+    display: block;
+}
+.login_h input{
+    background-position: 0 -42px;
+}
+.login_tip{
+    width: 400px;
+    height: 20px;
+    margin-right: 10px;
+}
+#seg_agr{
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin-top: 2px;
+}
+.login_tip .login_lab{
+    float: left;
+    font-size: 12px;
+    color: #666666;
+    padding-left: 5px;
+}
+.agr{
+    float: left;
+}
+.agr_span,.agr_box,.agr{
+    display: inline-block;
+    line-height: 19px;
+    color: #666;
+    font-size: 12px;
+}
+.agr_span a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.user_Xy{
+    color: #1278c0;
+    font-size: 12px;
+}
+.b_login_auto{
+    width: 13px;
+    height: 13px;
+    float: left;
+    line-height: 18px;
+    margin-top: 3px;
+}
+.b_login_auto_inp{
+    width: auto;
+    line-height: 15px;
+    float: left;
+}
+.b_login_auto_inp span{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #666;
+}
+/* two 开始 */
+.c_QQ_login i{
+    width: 80px;
+    float: left;
+}
+.c_Weixin_login i{
+    width: 80px;
+}
+.c_weiBo_login i{
+    width: 100px;
+}
+#c_phone_login i{
+    background-position: 0 -712px;
+}
+#c_QQ_login i{
+    background-position: 0 -578px;
+}
+#c_Weixin_login i{
+    background-position: 0 -612px;
+}
+#c_WeiBo_login i{
+    background-position: 0 -204px;
+}
+.menu_qq  i{
+    height: 31px;
+    background: url(../img/gspriteV1705.png) no-repeat;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.fsongObj{
+    width: 78px;
+    height: 27px;
+    position: absolute;
+    top: 7px;
+    left: 193px;
+}
+.h_yanZm{
+    width: 100px;
+    height: 27px;
+    background-color: #80c90d;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    border-radius: 4px;
+}
+.c_input_tit{
+    font-size: 12px;
+    color: #b3b3b3;
+    padding-left: 3px;
+}
+.login-fro{
+    width: 100%;
+    height: auto;
+}
+.c_input_tit_err{
+    color: black;
+    font-size: 12px;
+    width: 190px;
+    top: 7px;
+    right: -120px;
+    position: absolute;
+    border: 1px solid #fdf0dd;
+    padding: 3px 5px 3px 25px;
+    line-height: 19px;
+    display: inline-block;
+    overflow: hidden;
+    background: url("../img/q_sprite.png") no-repeat -150px -51px #fffed7;
+}
+.ks_input_pwd_err{
+    color: black;
+    width: 190px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 19px;
+    border: 1px solid #fdf0dd;
+    padding: 3px 5px 3px 25px;
+    top: 2px;
+    right: 10px;
+    position: absolute;
+    z-index: 999;
+    background: url("../img/q_sprite.png") no-repeat -150px -51px #fffed7;
+}
