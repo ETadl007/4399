@@ -18,7 +18,15 @@
     width: 270px;
     height: 27px;
     padding: 3px 0 0 130px;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
+    line-height: 28px;
+    position: relative;
+}
+.Msglogin{
+    width: 270px;
+    height: 18px;
+    padding: 3px 0 0 130px;
+    padding-bottom: 4px;
     line-height: 28px;
     position: relative;
 }
@@ -56,13 +64,14 @@
     cursor: pointer;
     background: url("../img/gspriteV1705.png") no-repeat;
 }
-.menu ul li a{
+.menua{
     height: 40px;
     color: white;
     font-size: 14px;
     font-weight: 700;
     display: inline-block;
     width:auto;
+    padding: 0 20px;
 }
 
 a{
@@ -80,20 +89,20 @@ a{
     font-weight: 700;
 }
 .list_login{
-    width:90px;
     height: 50px;
     text-align: center;
     line-height: 40px;
     float: left;
     display: inline;
     list-style: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #79b913;
     margin: 8px 10px 0 0;
+    cursor: pointer;
 }
 .active{
     background-color: #fff;
-    color: black;
+    color: #666;
 }
 #one_login{
     color:#666;
@@ -141,7 +150,6 @@ a{
     text-align: right;
     display: inline-block;
     line-height: 51px;
-    float: left;
 }
 .menu_qq a{
     float: left;
@@ -198,7 +206,7 @@ a{
     background: url("../img/gspriteV1705.png") no-repeat;
 }
 #enroll_img{
-    background-position: 0 -530px;
+    background-position: 0 -528px;
 }
 .login_auto_inp span{
     margin-left: 5px;
@@ -229,10 +237,11 @@ a{
     text-decoration: underline;
 }
 .login_links_sp{
-    width: auto;
-    color: #666666;
+    width: 2px;
+    background-color: #999999;
     display: inline-block;
-    padding: 0 7px 0 7px;
+    height: 10px;
+    margin: 0 5px;
 }
 .login_btn{
     width: 77px;
@@ -244,6 +253,7 @@ a{
     outline: none;
     border: 0;
     overflow: hidden;
+    cursor: pointer;
 }
 #login_btn_Img{
     background-position: 0 -76px;
@@ -282,48 +292,6 @@ a{
     text-align: right;
     display: inline-block;
     line-height: 51px;
-    float: left;
-}
-.b_menu_qq a{
-    float: left;
-}
-.b_phone i{
-    width: 115px;
-}
-.b_QQ_login i{
-    width: 80px;
-    float: left;
-}
-.b_Weixin_login i{
-    width: 80px;
-}
-.b_weiBo_login i{
-    width: 100px;
-}
-#b_phone_login i{
-    background-position: 0 -712px;
-}
-#b_QQ_login i{
-    background-position: 0 -578px;
-}
-#b_Weixin_login i{
-    background-position: 0 -612px;
-}
-#b_WeiBo_login i{
-    background-position: 0 -204px;
-}
-.b_menu_qq  i{
-    height: 31px;
-    background: url(../img/gspriteV1705.png) no-repeat;
-    display: block;
-    cursor: pointer;
-    overflow: hidden;
-}
-.b_menu_login_qq{
-    width: 400px;
-    height: 40px;
-    float: right;
-    margin-top: 10px;
 }
 .login_module{
     width: 100%;
@@ -388,6 +356,14 @@ a{
     display: block;
     float: left;
     background: url('../img/gspriteV1705.png') no-repeat;
+}
+.input_tip_ok{
+    display: inline-block;
+    background: url('../img/spriteV2.png') no-repeat -113px -57px;
+    color: #CCCCCC;
+    width: 25px;
+    height: 12px;
+    overflow: hidden;
 }
 .login_register_Wt a{
     display: block;
@@ -476,12 +452,21 @@ a{
     cursor: pointer;
     overflow: hidden;
 }
+.ico_question{
+    position: absolute;
+    top: 4px;
+    left: 177px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://ptlogin.3304399.net/resource/images/ico_question.png?v=131127) no-repeat;
+}
 .fsongObj{
     width: 78px;
     height: 27px;
     position: absolute;
-    top: 7px;
-    left: 193px;
+    top: 5px;
+    left: 203px;
 }
 .h_yanZm{
     width: 100px;
@@ -506,8 +491,8 @@ a{
     color: black;
     font-size: 12px;
     width: 190px;
-    top: 7px;
-    right: -120px;
+    top: 5  px;
+    right: -133px;
     position: absolute;
     border: 1px solid #fdf0dd;
     padding: 3px 5px 3px 25px;
