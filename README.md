@@ -1,2 +1,195 @@
-# 4399
-仿4399登录php+mysql
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>4399登录</title>
+		<link href="./css/login.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="box">
+			<div class="menu">
+				<ul class="list">
+					<li class="list_login menua active">
+						登录
+					</li>
+					<li class="list_login menua" id="listphone">
+						短信登录
+					</li>
+					<li class="list_login menua" id="lis">
+						快速注册
+					</li>
+					<li class="list_login menua" id="er_logins">
+						二维码登录
+					</li>
+				</ul>
+				<span class="login_close" id="login_close"></span>
+			</div>
+			<div class="login" id="login">
+				<div class="menu_qq">
+					<span>其他登录</span>
+					<div class="menu_login_qq">
+						<a href="javascript:;" id="phone_login" class="phone" title="短信验证码登陆"><i></i></a>
+						<a href="" id="QQ_login" class="QQ_login" title="QQ号登陆"><i></i></a>
+						<a href="" id="Weixin_login" class="Weixin_login" title="微信登陆"><i></i></a>
+						<a href="" id="WeiBo_login" class="weiBo_login" title="新浪微博登陆"><i></i></a>
+					</div>
+				</div>
+				<div class="fltit">
+					<span class="line lt"></span>
+					<span class="line rt"></span>
+					<h3 class="tit_h3">4399账号登录</h3>
+				</div>
+				<form action="" class="fro">
+					<div class="Msglogin" id="msg" style="display: none; font-size: 12px; color: #ff0000;"></div>
+					<div class="login-a">
+						<label class="login_lab">4399用户名<em> *</em></label>
+						<input class="login_inp" id="username" type="text" style="color: rgba(175,175,175)" value="请输入4399账号或手机号">
+					</div>
+					<div class="login-a">
+						<label class="login_lab">密码<em> *</em></label>
+						<input class="login_inp" id="userpwd" type="password">
+					</div>
+					<div class="login-a">
+						<input type="button" value="" class="login_btn" id="login_btn_Img">
+						<a href="javascript:;" class="login_btn" id="registration_Img" onclick="regs()" title="加入4399"></a>
+					</div>
+					<div class="login-a">
+						<div class="login_auto_inp">
+							<input type="checkbox" checked="checked" class="login_auto">
+							<span href="https://u.4399.com/anquan/pwd/" target="_blank">自动登录</span>
+						</div>
+						<span class="login_link">
+							<a href="https://u.4399.com/anquan/pwd/"  target="_blank" target="_blank" title="忘记密码">忘记密码</a>
+							<span class="login_links_sp"></span>
+							<a href="https://u.4399.com/kf/im/zcdl" target="_blank" title="登录问题反馈">登录问题反馈</a>
+						</span>
+					</div>
+				</form>
+			</div>
+			<!-- 第三方登录 -->
+			<div class="module" id="module_login">
+				<div class="menu_qq">
+					<span>其他登录</span>
+					<div class="menu_login_qq">
+						<a href="javascript:;" id="phone_login" class="phone" title="短信验证码登陆"><i></i></a>
+						<a href="" id="QQ_login" class="QQ_login" title="QQ号登陆"><i></i></a>
+						<a href="" id="Weixin_login" class="Weixin_login" title="微信登陆"><i></i></a>
+						<a href="" id="WeiBo_login" class="weiBo_login" title="新浪微博登陆"><i></i></a>
+					</div>
+				</div>
+				<div class="login_module">
+					<div class="login_menu">
+						<form action="" name="forms">
+							<div class="login_h">
+								<label class="r_label_user">4399用户登录<em> *</em></label>
+								<input type="text" value="2719058249" id="fp_Users" autofocus="autofocus" class="login_inp">
+								<span class="input_tit" id="fp_Userstit">用户名由3~20个字符组成</span>
+							</div>
+							<div class="login_h">
+								<label class="r_label_user">密码<em> *</em></label>
+								<input type="password" id="ks_Pwd" class="login_inp">
+								<span class="input_tit" id="ks_Pwd_label"></span>
+							</div>
+							<div class="login_h">
+								<label class="r_label_user">再次输入密码<em> *</em></label>
+								<input type="password" id="ks_Two_pwd" class="login_inp">
+								<span class="input_tit" id="Two_pwd_label"></span>
+							</div>
+							<div class="login_h">
+								<label class="r_label_user">QQ号</label>
+								<input type="text" class="login_inp" id="login_qq_err">
+								<span class="input_tit" id="login_qq_tit">(选填)可通过QQ号找回密码</span>
+							</div>
+							<div class="login_h">
+								<label class="r_label_user">真实姓名<em> *</em></label>
+								<input type="text" id="ks_Name" class="login_inp">
+								<span class="input_tit" id="j_ks_Name">防沉迷要求填写真实姓名</span>
+							</div>
+							<div class="login_h">
+								<label class="r_label_user">身份证号<em> *</em></label>
+								<input type="text" id="j_Id" class="login_inp">
+								<span class="input_tit" >
+									<span id="j_ks_Id"></span>
+									<a href="https://u.4399.com/kf/im/zhrz?ref" id="a_zs_id" target="_blank">实名认证遇到问题？</a>
+								</span>
+							</div>
+							<div class="login_h">
+								<input type="button" id="submit_enroll" value="" class="login_register_Wt">
+								<span class="input_tit"><a href="https://u.4399.com/kf/im/zcdl" target="_blank">注册问题反馈</a></span>
+							</div>
+							<div class="login_h">
+								<div class="login_tip">
+									<input id="seg_agr" type="checkbox">
+									<label class="login_lab">已同意</label>
+									<div class="agr">
+										<div class="agr_box">
+                                    <span class="agr_span">
+                                        <a href="https://ptlogin.4399.com/resource/protocol.html" class="user_Xy" target="_blank">《用户协议》</a>"和"
+                                        <a href="https://ptlogin.4399.com/resource/protocol.html" class="user_Xy" target="_blank">《隐私政策》</a>
+                                    </span>
+										</div>
+									</div>
+									<div class="b_login_auto_inp">
+										<input type="checkbox" checked="checked" class="b_login_auto">
+										<span href="https://u.4399.com/anquan/pwd/" target="_blank">自动登录</span>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- 第三方短信登录 -->
+			<div class="login" id="short" style="display: none">
+				<div class="menu_qq">
+					<span>其他登录</span>
+					<div class="menu_login_qq">
+						<a href="" id="c_QQ_login" class="c_QQ_login" title="QQ号登陆"><i></i></a>
+						<a href="" id="c_Weixin_login" class="c_Weixin_login" title="微信登陆"><i></i></a>
+						<a href="" id="c_WeiBo_login" class="c_weiBo_login" title="新浪微博登陆"><i></i></a>
+					</div>
+				</div>
+				<div class="fltit">
+					<span class="line lt"></span>
+					<span class="line rt"></span>
+					<h3 class="tit_h3">短信登录</h3>
+				</div>
+				<form action="" class="login-fro">
+					<div class="Msglogin" id="phonemsg" style="display: none; font-size: 12px; color: #ff0000;"></div>
+					<div class="login-a">
+						<label class="login_lab">手机号<em> *</em></label>
+						<input class="login_inp" id="name_phone" type="text" placeholder="">
+						<span class="c_input_tit" id="sjh">请输入11位手机号</span>
+					</div>
+					<div class="login-a">
+						<label class="login_lab">验证码<em> *</em></label>
+						<input class="login_inp" id="Captcha" type="text">
+						<span class="c_input_tit" id="yzm">请输入短信验证码</span>
+						<div class="fsongObj">
+							<a href="javascript:;" class="h_yanZm">获取验证码</a>
+						</div>
+					</div>
+					<div class="login-a">
+						<div class="login_auto_inp">
+							<input type="button" value="" class="enroll" id="enroll_img">
+							<a href="https://u.4399.com/kf/im/zcdl?ref" target="_blank">登录问题反馈</a>
+						</div>
+					</div>
+					<div class="login-a">
+						<div class="login_auto_inp">
+							<input type="checkbox" checked="checked" class="login_auto">
+							<span href="https://u.4399.com/anquan/pwd/">自动登录</span>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- 二维码登录 -->
+			<iframe src="./er_login.html" id="er_login"
+					style="display: none" scrolling="no" frameborder="none" width="100%" height="auto">
+			</iframe >
+		</div>
+		<script src="./js/jquery-3.1.1.min.js"></script>
+		<script src="./js/login.js"></script>
+	</body>
+</html>
+
